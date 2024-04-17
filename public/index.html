@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- Author: Emma Hubert -->
+        <title>Hip-HQ</title>
+        <link rel="stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body>
+        <section class="head">
+            <section class="logo-img">
+                <img id="logo" src="images/logo.png">
+            </section>
+            <header id="header">
+                <nav id="main-nav">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="https://ehubertt.github.io/Projects/part3/home/index.html">Home</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/creators/index.html">Creators</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/products/index.html">Products</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/brands/index.html">Brands</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/contactMe/index.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>    
+        </section> 
+        <div id ="content">        
+            <main id="main-content">
+                <h1 class="header">My Favorite Brands</h1>
+                <div id="dialog" class="w3-modal">
+                    <div class="w3-modal-content">
+                      <div class="w3-container">
+                        <span onclick="document.getElementById('dialog').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                          <section id="dialog-details">
+                            <form id="add-brand-form" method="post" class="hidden">
+                                <input type="hidden" id="_id" name="_id">
+                                <section class="section1">
+                                    <section3 class ="section3">
+                                        <h2>Add & Make Changes to your Brand</h2>
+                                        <p>Please only make altercations to your own submissions to maintain the integrity of the page! &#128522 
+                                        </p>
+                                        <p>
+                                            <label for="name ">Brand Name:</label>
+                                            <input type="text" id="name" name="name" required />
+                                        </p>
+                                        <p>
+                                            <label for="description">Description:</label>
+                                            <textarea type="text" id="description" name="description" required minlength="20"></textarea>
+                                        </p>
+                                        <p id="products ">
+                                            <label class="inline">Products:</label>
+                                            <a href="#" id="add-product">Add Product</a>
+                                            <section id="product-boxes"></section>
+                                        </p>
+                                        <p>
+                                            <label for="userName">Enter your name:</label>
+                                            <input type="text" id="userName" name="userName" required/>
+                                        </p>
+                                    </section3>
+                                    <section2 class="section2">
+                                        <p id="img-prev-section">
+                                            <img id="img-prev">
+                                        </p>
+                                        <p>
+                                            <label for="img" class="custom-file-input">
+                                                Select an Image
+                                            </label>
+                                            <input type="file" id="img" name="img" accept="image/*" class="hidden-file-input"/>
+                                        </p>
+                                    </section2>
+                                </section>
+                                <section class="cancel-save">
+                                    <p>
+                                        <button id="cancel" type="cancel">Cancel</button>
+                                    </p>
+                                    <p>
+                                        <button type="submit" id="submit">Submit</button>
+                                    </p>
+                                </section>
+                            </form>
+                
+            </main>
+            <section class="btn">
+                <button id="brand-btn" >Click here to add a brand!</button>
+            </section>  
+            <h2 id="add" >User Submissions:</h2>
+            <section id="user-brand-details">
+                             
+            </section>
+        </div>
+        <section id="foot">
+            <section class="footer">
+                <p>&copy; emmahubertt</p>
+            </section>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

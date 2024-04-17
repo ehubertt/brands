@@ -1,0 +1,354 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-grey: #d3d3d3;
+    --dark-grey: #433f3f;
+    --bg: #abc;
+    --content-bg: #f7dfec; 
+    --nav-hover: #F2C9E0;
+    --nav-txt: #000;
+    --section-bg: #ccd6e0;
+    --section-border: #D96690;
+    --img-border: #F28DB2;
+    --header-bg: #8896a3;
+}
+
+body {
+    font-family:sans-serif ;
+    background: var(--bg);
+}
+
+/* structure */ 
+#content {
+    background: var(--content-bg); 
+    border: 4px solid var(--section-border);
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 15px; /* will round corners a little bit */
+    
+}
+
+/*header and footer*/
+#header {
+    text-align: center;
+}
+#main-nav {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#main-nav ul {
+    /*remove list indent */
+    padding-left: 0;
+    margin: auto;
+    margin-top: 0px;
+}
+#main-nav li {
+    list-style-type: none;
+    background: var(--white);
+    padding: 10px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--nav-txt);
+}
+#main-nav li:hover {
+    background: var(--nav-hover);
+}
+#logo{
+    margin: auto;
+    margin-top: 40px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+    text-align: center;
+}
+.logo-img{
+    width: 100%;
+    text-align: center;
+}
+#logo:hover{
+    border: 4px dotted var(--section-border);
+}
+
+#foot {
+    width:100%;
+    background-image: url('images/wallpaper.jpg');
+    height: 150px;
+    margin-top: 40px;
+    border-top: 4px solid var(--section-border);
+}
+.footer{
+    position: relative;
+    top: 30%;
+    padding: 5px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+    color: var(--section-border);
+    width: 120px;
+    background: var(--content-bg);
+    text-align: center;
+    margin:auto;
+}
+
+/* Hamburger */
+
+#hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--img-border);
+    border: 1px solid var(--section-border);
+    margin: 6px 0;
+}
+#hamburger{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.hide-small {
+    display: none;
+}
+#hamburger:hover {
+    background-color: var(--nav-hover);
+}
+
+
+
+/* Main Content */
+
+.name {
+    text-align: center;
+    -webkit-text-stroke: 1px var(--section-border);
+    color: var(--content-bg);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.images{
+    border-radius: 20px;
+    border: 4px solid var(--img-border);
+    max-width: 250px;
+    height: auto;
+}
+.brand {
+    border-radius: 20px;
+    background: var(--section-bg);
+    border: 3px solid var(--section-border);
+    color: var(--black);
+}
+.brand {
+    text-align: center;
+}
+.btn{
+    width: 60%;
+    margin: auto;
+}
+#brand-btn a{
+    text-decoration: none;
+    color: var(--section-border);
+}
+#brand-btn {
+    text-align: center;
+    background: var(--section-bg);
+    border: 2px solid var(--section-border);
+    border-radius: 20px;
+    height: 50px;
+    font-size: 25px;
+    color: var(--section-border);
+}
+button{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#brand-btn:hover {
+    background: var(--nav-hover);
+}
+.supply-box {
+    display:block;
+}
+.modal-image{
+    max-width: 300px;
+    max-height: 200px;
+    margin: 20px;
+  }
+  .cancel-save {
+    display: flex;
+    width: 100%;
+    margin: 20px;
+  }
+  .cancel-save p{
+    margin-right: 20px;
+  }
+  #cancel , #submit {
+    background-color: var(--img-border);
+    border: 2px solid black;
+    
+  }
+  
+  #cancel:hover {
+    background: lightgray;
+  }
+  #submit:hover {
+    background: lightgray;
+  }
+  .custom-file-input:hover {
+    background: lightgray;
+  }
+  
+  .section2{
+    flex: 40%;
+    max-width: 30%;
+    margin: 20px;
+  }
+  form {
+    font-size: 15px;
+  }
+  .hidden {
+    display: none;
+  }
+  #img-prev-section {
+    max-width: 400px;
+    height:300px;
+    margin: 20px;
+    background: lightgray;
+  }
+
+  #img-prev {
+    padding: 2.5%;
+    display: block;
+    margin: auto;
+    max-width: 95%;
+  }
+
+  .custom-file-input {
+    font-size: 15px;
+    background-color: var(--img-border);
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 20px;
+    color: var(--black);
+  }
+  
+  .hidden-file-input {
+    display: none;
+  }
+  #brand-btn:hover {
+    cursor: pointer;
+    background: lightgray;
+  }
+
+#add , .header {
+    text-align: center;
+    margin-top: 30px;
+    -webkit-text-stroke: 1px var(--section-border);
+    color: var(--img-border);
+    font-size: 30px;
+}
+
+.w3-modal-content {
+    border: 2px solid var(--section-border);
+    color: var(--section-border);
+    
+}
+.w3-container {
+    background: var(--content-bg);
+    position: relative;
+  }
+#dialog {
+    margin-bottom: 30px;
+}
+#img-prev {
+    max-width: 100%;
+    max-height: 100%;
+}
+#edit-link, #delete-link {
+    color: var(--dark-grey);
+    -webkit-text-stroke: .01px var(--dark-grey);
+}
+#edit-link:hover {
+    color: var(--img-border);
+}
+#delete-link:hover {
+    color: var(--img-border);
+}
+
+/* For larger resolutions */
+@media only screen and (min-width: 812px) {
+    
+    #nav-items{
+        display:flex;
+    }
+    #main-nav {
+        display:flex;
+        
+    }
+    #main-nav li {
+        text-align: center;
+        margin:40px;
+    }
+    .brand-box {
+        display:flex;
+        width: 60%;
+        margin: auto;
+    }
+    .brand {
+        width: 100%;
+        margin: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 20px;
+    }
+    #hamburger {
+        display: none;
+    }
+    .head {
+        width:100%;
+        background-image: url('images/wallpaper.jpg');
+        height: 300px;
+        border-bottom: 4px solid var(--section-border);
+        margin:0px;
+        padding:0px;
+        margin-bottom: 30px;
+    }
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #content {
+        margin-top: 75px;
+        margin-bottom: 100px;
+    }
+    .btn{
+        width: 35%;
+        margin: auto;
+    }
+    #brand-details{
+        display: block;
+    }
+    textarea{
+        font-size: 15px;
+        height: 200px;
+        width: 600px;
+    }
+    
+}
+
+
+/* For smaller resolutions */
+@media only screen and (max-width: 812px) {
+    .brand {
+        margin: 20px;
+        padding: 20px;
+    }
+    #content {
+        width:95%;
+    }
+    .modal-image{
+        max-width: 20%;
+        margin: 20px;
+      }
+    
+}
